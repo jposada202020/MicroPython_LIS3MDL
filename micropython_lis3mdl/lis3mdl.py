@@ -13,6 +13,7 @@ MicroPython Driver for the ST LIS3MDL magnetometer
 
 """
 
+import time
 from micropython import const
 from micropython_lis3mdl.i2c_helpers import CBits, RegisterStruct
 
@@ -51,14 +52,32 @@ RATE_155_HZ = const(0b000001)
 RATE_300_HZ = const(0b010001)
 RATE_560_HZ = const(0b100001)
 RATE_1000_HZ = const(0b110001)
-data_rate_values = (RATE_0_625_HZ, RATE_1_25_HZ, RATE_2_5_HZ, RATE_5_HZ, RATE_10_HZ, RATE_20_HZ, RATE_40_HZ, RATE_80_HZ, RATE_155_HZ, RATE_300_HZ, RATE_560_HZ, RATE_1000_HZ)
+data_rate_values = (
+    RATE_0_625_HZ,
+    RATE_1_25_HZ,
+    RATE_2_5_HZ,
+    RATE_5_HZ,
+    RATE_10_HZ,
+    RATE_20_HZ,
+    RATE_40_HZ,
+    RATE_80_HZ,
+    RATE_155_HZ,
+    RATE_300_HZ,
+    RATE_560_HZ,
+    RATE_1000_HZ,
+)
 
 SCALE_4_GAUSS = const(0b00)
 SCALE_8_GAUSS = const(0b01)
 SCALE_12_GAUSS = const(0b10)
 SCALE_16_GAUSS = const(0b11)
 scale_range_values = (SCALE_4_GAUSS, SCALE_8_GAUSS, SCALE_12_GAUSS, SCALE_16_GAUSS)
-scale_range_factor = {SCALE_4_GAUSS: 6842, SCALE_8_GAUSS:3421, SCALE_12_GAUSS:2281, SCALE_16_GAUSS:1711}
+scale_range_factor = {
+    SCALE_4_GAUSS: 6842,
+    SCALE_8_GAUSS: 3421,
+    SCALE_12_GAUSS: 2281,
+    SCALE_16_GAUSS: 1711,
+}
 
 LP_DISABLED = const(0b0)
 LP_ENABLED = const(0b1)
@@ -159,7 +178,20 @@ class LIS3MDL:
         | :py:const:`lis3mdl.RATE_1000_HZ`  | :py:const:`0b110001` |
         +-----------------------------------+----------------------+
         """
-        values = ("RATE_0_625_HZ", "RATE_1_25_HZ", "RATE_2_5_HZ", "RATE_5_HZ", "RATE_10_HZ", "RATE_20_HZ", "RATE_40_HZ", "RATE_80_HZ", "RATE_155_HZ", "RATE_300_HZ", "RATE_560_HZ", "RATE_1000_HZ")
+        values = (
+            "RATE_0_625_HZ",
+            "RATE_1_25_HZ",
+            "RATE_2_5_HZ",
+            "RATE_5_HZ",
+            "RATE_10_HZ",
+            "RATE_20_HZ",
+            "RATE_40_HZ",
+            "RATE_80_HZ",
+            "RATE_155_HZ",
+            "RATE_300_HZ",
+            "RATE_560_HZ",
+            "RATE_1000_HZ",
+        )
         return values[self._data_rate]
 
     @data_rate.setter
@@ -200,7 +232,7 @@ class LIS3MDL:
         Reset the sensor
         """
         self._reset = True
-        sleep(0.010)
+        time.sleep(0.010)
 
     @property
     def low_power_mode(self) -> str:
