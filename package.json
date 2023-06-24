@@ -1,0 +1,8 @@
+{
+  "urls": [
+    ["micropython_lis3mdl/__init__.py", "github:jposada202020/MicroPython_LIS3MDL/micropython_lis3mdl/__init__.py"],
+    ["micropython_lis3mdl/i2c_helpers.py", "github:jposada202020/MicroPython_LIS3MDL/micropython_lis3mdl/i2c_helpers.py"],
+    ["micropython_lis3mdl/lis3mdl.py", "github:jposada202020/MicroPython_LIS3MDL/micropython_lis3mdl/lis3mdl.py"]
+  ],
+  "version": "0.1"
+}
