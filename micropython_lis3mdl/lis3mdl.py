@@ -112,11 +112,13 @@ class LIS3MDL:
     .. code-block:: python
 
         i2c = I2C(1, sda=Pin(2), scl=Pin(3))
-        lis3mdl = lis3mdl.LIS3MDL(i2c)
+        lis = lis3mdl.LIS3MDL(i2c)
 
     Now you have access to the attributes
 
     .. code-block:: python
+
+        magx, magy, magz = lis.magnetic
 
     """
 
