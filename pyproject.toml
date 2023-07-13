@@ -22,8 +22,6 @@ keywords = [
     "sensor",
     "micropython",
     "lis3mdl",
-    "micropython",
-    "lis3mdl",
     "magnetometer",
     "temperature",
     "driver",

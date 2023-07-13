@@ -16,7 +16,7 @@ while True:
         print("Current Scale range setting: ", lis.scale_range)
         for _ in range(10):
             magx, magy, magz = lis.magnetic
-            print("x:{:.2f}uT, y:{:.2f}uT, z:{:.2f}uT".format(magx, magy, magz))
+            print(f"X:{magx:0.2f}, Y:{magy:0.2f}, Z:{magz:0.2f} uT")
             print()
             time.sleep(0.5)
         lis.scale_range = scale_range
