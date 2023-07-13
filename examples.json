@@ -6,5 +6,5 @@
     ["micropython_lis3mdl/examples/lis3mdl_low_power_mode.py", "github:jposada202020/MicroPython_LIS3MDL/examples/lis3mdl_low_power_mode.py"],
     ["micropython_lis3mdl/examples/lis3mdl_operation_mode.py", "github:jposada202020/MicroPython_LIS3MDL/examples/lis3mdl_operation_mode.py"]
   ],
-  "version": "0.1"
+  "version": "1"
 }
