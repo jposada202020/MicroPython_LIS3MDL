@@ -42,3 +42,12 @@ Example showing the Operation mode setting
 .. literalinclude:: ../examples/lis3mdl_operation_mode.py
     :caption: examples/lis3mdl_operation_mode.py
     :lines: 5-
+
+Compass Example
+------------------------
+
+Example showing how to use the LIS3MDL as a compass
+
+.. literalinclude:: ../examples/lis3mdl_compass.py
+    :caption: examples/lis3mdl_compass.py
+    :lines: 5-

@@ -9,8 +9,6 @@ import datetime
 sys.path.insert(0, os.path.abspath(".."))
 
 try:
-    # Inject mock modules so that we can build the
-    # documentation without having the real stuff available
     from mock import Mock
 
     to_be_mocked = [
@@ -41,9 +39,7 @@ intersphinx_mapping = {
     "MicroPython": ("https://docs.micropython.org/en/latest/", None),
 }
 
-# autodoc_mock_imports = ["digitalio", "busio"]
 autoclass_content = "both"
-# Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]
 source_suffix = ".rst"
 master_doc = "index"

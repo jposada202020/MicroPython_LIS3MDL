@@ -6,7 +6,6 @@ Introduction
     :target: https://micropython-lis3mdl.readthedocs.io/en/latest/
     :alt: Documentation Status
 
-
 .. image:: https://img.shields.io/badge/micropython-Ok-purple.svg
     :target: https://micropython.org
     :alt: micropython

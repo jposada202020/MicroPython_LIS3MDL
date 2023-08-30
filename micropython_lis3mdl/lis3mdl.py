@@ -8,7 +8,7 @@
 MicroPython Driver for the ST LIS3MDL magnetometer
 
 
-* Author(s): Jose D. Montoya
+* Author: Jose D. Montoya
 
 
 """
@@ -139,7 +139,7 @@ class LIS3MDL:
         self._address = address
 
         if self._device_id != 0x3D:
-            raise RuntimeError("Failed to find LIS3MDL")
+            raise RuntimeError("Failed to find the LIS3MDL sensor")
 
         self._operation_mode = CONTINUOUS
         self._scale_cached_factor = scale_range_factor[self._scale_range]

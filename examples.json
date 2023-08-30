@@ -1,10 +1,29 @@
 {
   "urls": [
-    ["micropython_lis3mdl/examples/lis3mdl_data_rate.py", "github:jposada202020/MicroPython_LIS3MDL/examples/lis3mdl_data_rate.py"],
-    ["micropython_lis3mdl/examples/lis3mdl_scale_range.py", "github:jposada202020/MicroPython_LIS3MDL/examples/lis3mdl_scale_range.py"],
-    ["micropython_lis3mdl/examples/lis3mdl_simpletest.py", "github:jposada202020/MicroPython_LIS3MDL/examples/lis3mdl_simpletest.py"],
-    ["micropython_lis3mdl/examples/lis3mdl_low_power_mode.py", "github:jposada202020/MicroPython_LIS3MDL/examples/lis3mdl_low_power_mode.py"],
-    ["micropython_lis3mdl/examples/lis3mdl_operation_mode.py", "github:jposada202020/MicroPython_LIS3MDL/examples/lis3mdl_operation_mode.py"]
+    [
+      "micropython_lis3mdl/examples/lis3mdl_data_rate.py",
+      "github:jposada202020/MicroPython_LIS3MDL/examples/lis3mdl_data_rate.py"
+    ],
+    [
+      "micropython_lis3mdl/examples/lis3mdl_scale_range.py",
+      "github:jposada202020/MicroPython_LIS3MDL/examples/lis3mdl_scale_range.py"
+    ],
+    [
+      "micropython_lis3mdl/examples/lis3mdl_simpletest.py",
+      "github:jposada202020/MicroPython_LIS3MDL/examples/lis3mdl_simpletest.py"
+    ],
+    [
+      "micropython_lis3mdl/examples/lis3mdl_low_power_mode.py",
+      "github:jposada202020/MicroPython_LIS3MDL/examples/lis3mdl_low_power_mode.py"
+    ],
+    [
+      "micropython_lis3mdl/examples/lis3mdl_operation_mode.py",
+      "github:jposada202020/MicroPython_LIS3MDL/examples/lis3mdl_operation_mode.py"
+    ],
+    [
+      "micropython_lis3mdl/examples/lis3mdl_compass.py",
+      "github:jposada202020/MicroPython_LIS3MDL/examples/lis3mdl_compass.py"
+    ]
   ],
   "version": "1"
 }
